@@ -75,5 +75,3 @@ jobs:
           PUBLISH_BRANCH: gh-pages
           publish_dir: ""
           keep_files: false # remove existing files
-          publish_branch: master  # deploying branch
-          commit_message: ${{ github.event.head_commit.message }}
