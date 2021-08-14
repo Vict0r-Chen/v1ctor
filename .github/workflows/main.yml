@@ -49,7 +49,7 @@ jobs:
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
-          sudo timedatectl set-timezone "Asia/Beijing"
+          sudo timedatectl set-timezone "Asia/Shanghai"
           mkdir -p ~/.ssh
           echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
