@@ -56,13 +56,12 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
       # 生成并部署
-      - name: Deploy
+      - name: Generate
         run: |
           npx hexo deploy --generate
-          
-      - name: deploy  # 部署到仓库 gh-pages 分支
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      
+      - name: Deploy # 部署到仓库 gh-pages 分支
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./public
