@@ -71,7 +71,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
-          external_repository: Vict0r-Chen/v1ctor # Pages 远程仓库 
+#           external_repository: Vict0r-Chen/v1ctor # Pages 远程仓库 
           PUBLISH_BRANCH: gh-pages
-          publish_dir: ""
+          publish_dir: "./public"
           keep_files: false # remove existing files
