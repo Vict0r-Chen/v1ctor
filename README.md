@@ -1,1 +1,1 @@
-# v1ctor
+# v1ctor - blog
