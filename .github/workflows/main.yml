@@ -74,6 +74,6 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           # external_repository: Vict0r-Chen/v1ctor
           external_repository: Vict0r-Chen/blog # Pages 远程仓库 
-          PUBLISH_BRANCH: gh-pages
-          publish_dir: ./public
+          PUBLISH_BRANCH: main
+#          publish_dir: ./public
 #           keep_files: false # remove existing files
