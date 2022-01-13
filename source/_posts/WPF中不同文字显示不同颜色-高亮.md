@@ -1,6 +1,6 @@
 ---
 title: WPF中不同文字显示不同颜色(高亮)
-date: 2022-01-13 09:43:47
+date: 2022-01-13 10:14:49
 tags: [WPF,TextBlock]
 ---
 
@@ -26,7 +26,7 @@ tags: [WPF,TextBlock]
  ```
 ### 效果：
 
-![效果图](../images/202201/20220113_01.png)
+{% asset_img 20220113_01.png 效果图 %}
 
 ### 源码(`HighlightTermBehavior`)：
 ``` csharp
