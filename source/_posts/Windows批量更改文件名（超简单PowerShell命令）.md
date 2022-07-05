@@ -10,4 +10,8 @@ tags: PowerShell
 
 我的需求是把一堆`*.png`的文件名里面的`test_`删除，那么对应的命令则是：
 
-`Get-ChildItem .png *| Rename-Item -NewName { $_.Name -replace 'mapping_','' }`
+`Get-ChildItem .png *| Rename-Item -NewName { $_.Name -replace 'test_','' }`
+
+如果需求是把一堆`txt`文件名里的`a`替换成`b`，那么对应的命令：
+
+`Get-ChildItem .txt *| Rename-Item -NewName { $_.Name -replace 'a','b' }`
