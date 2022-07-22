@@ -106,7 +106,7 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: baidu_url_submitter
 
 sitemap:
   path: 
@@ -120,3 +120,9 @@ sitemap:
 
 baidusitemap:
   path: baidusitemap.xml
+
+baidu_url_submit:
+  count: 200  #代表提交最新的200个链接
+  host: v1ctor.cn
+  token: iBq9Fg671rIuUK2s
+  path: baidu_urls.txt
