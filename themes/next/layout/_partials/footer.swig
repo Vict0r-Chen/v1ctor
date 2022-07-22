@@ -1,15 +1,3 @@
-{%- if theme.footer.beian.enable %}
-  <div class="beian">
-    {{- next_url('https://beian.miit.gov.cn', theme.footer.beian.icp + ' ') }}
-    {%- if theme.footer.beian.gongan_icon_url %}
-      <img src="{{ url_for(theme.footer.beian.gongan_icon_url) }}" style="display: inline-block;">
-    {%- endif %}
-    {%- if theme.footer.beian.gongan_id and theme.footer.beian.gongan_num %}
-      {{- next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=' + theme.footer.beian.gongan_id, theme.footer.beian.gongan_num + ' ') }}
-    {%- endif %}
-  </div>
-{%- endif %}
-
 <div class="copyright">
   {% set copyright_year = date(null, 'YYYY') %}
   &copy; {% if theme.footer.since and theme.footer.since != copyright_year %}{{ theme.footer.since }} – {% endif %}
@@ -18,6 +6,18 @@
     <i class="{{ theme.footer.icon.name }}"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright or author }}</span>
+
+  {%- if theme.footer.beian.enable %}
+    <span class="beian">
+      {{- next_url('https://beian.miit.gov.cn', theme.footer.beian.icp + ' ') }}
+      {%- if theme.footer.beian.gongan_icon_url %}
+        <img src="{{ url_for(theme.footer.beian.gongan_icon_url) }}" style="display: inline-block;">
+      {%- endif %}
+      {%- if theme.footer.beian.gongan_id and theme.footer.beian.gongan_num %}
+        {{- next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=' + theme.footer.beian.gongan_id, theme.footer.beian.gongan_num + ' ') }}
+      {%- endif %}
+    </span>
+  {%- endif %}
 
   {%- if config.symbols_count_time.total_symbols %}
     <span class="post-meta-divider">|</span>
