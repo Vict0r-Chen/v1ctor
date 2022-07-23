@@ -14,7 +14,7 @@ tags: Geek
 
 终于又得空，有时间写写blog(bug?)了，最近有点理解《开端》里说的“塞尔达才是天”了😂 
 
-其实本来有很多东西可写，奈何自己一直都这么懒🥲
+其实本来有很多东西可写，奈何自己一直都这么懒
 
 ## 正文
 
@@ -49,15 +49,37 @@ tags: Geek
 
 ***前提***：前往APP Store下载“跨时空”
 
-1. 将第一步的`账号原始ID(gh_1ac06b5a8f4e)`和`复制的小程序路径`分别替换下方链接中的`{0}`和`{1}`：
-   `ksk://kainy.cn/#weixin://app/KSK_URLscheme/jumpWxa/?userName={0}&path={1}`
-   此处我的结果：
-   `ksk://kainy.cn/#weixin://app/KSK_URLscheme/jumpWxa/?userName=gh_1ac06b5a8f4e&path=operation_plus/pages/yiqing/daka/worker/inspector/fast-result/index.html?scene=id%3D999999999%2Ccp%3D0`
+1. 将第一步的`账号原始ID(gh_1ac06b5a8f4e)`和`复制的小程序路径`粘贴到下方并点击**生成**。
+
+{% raw %}
+<script>
+   function concatPath(){
+      let id=document.getElementById("txtId").value;
+      let path=document.getElementById("txtPath").value;
+      document.getElementById("result").innerText=`ksk://kainy.cn/#weixin://app/KSK_URLscheme/jumpWxa/?userName=${id}&path=${path}`;
+   }
+</script>
+<div style="background:#23507f23; padding:10px; border-radius: 10px;margin: 10px 20px;">
+   <p style="text-align:center;margin-bottom:10px;">
+      <strong>生成URL</strong>
+   </p>
+   <div>
+      <span>账号原始ID：</span>
+      <input id="txtId">
+      <span>小程序路径：</span>
+      <input id="txtPath">
+      <button onclick="concatPath()">生成</button>
+      <p id="result"></p>
+   </div>
+</div>
+{% endraw %}
+
 2. 将上一步替换后的URL添加到`快捷指令`中：
    1. 打开`快捷指令`，点击右上角“+”，输入`快捷指令`的名称；
    2. 点击`添加操作`，输入`打开URL`；
    3. 将替换后的URL粘贴进`URL`中；
-   
+*此处生成的URL应是：`ksk://kainy.cn/#weixin://app/KSK_URLscheme/jumpWxa/?userName=gh_1ac06b5a8f4e&path=operation_plus/pages/yiqing/daka/worker/inspector/fast-result/index.html?scene=id%3D999999999%2Ccp%3D0`*
+
 {% asset_img p4.png %}
 
 3. 运行快捷指令看看效果～
