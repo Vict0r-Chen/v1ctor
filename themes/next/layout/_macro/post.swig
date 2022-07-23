@@ -193,7 +193,7 @@
           <!--noindex-->
           {%- if theme.read_more_btn %}
             <div class="post-button">
-              <a class="btn" href="{{ url_for(post.path) }}#more" rel="contents">
+              <a class="btn" href="{{ url_for(post.path) }}" rel="contents">
                 {{ __('post.read_more') }} &raquo;
               </a>
             </div>
