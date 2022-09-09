@@ -1,7 +1,12 @@
 ---
 title: IOS中通过快捷捷径打开健康码/场所码
+abbrlink: IOS中通过快捷捷径打开健康码或场所码
 date: 2022-07-03 13:50:52
-tags: Geek
+tags:
+   - 快捷捷径
+   - COVID-19
+categories:
+   - Geek
 ---
 
 ## 说明

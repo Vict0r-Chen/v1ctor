@@ -1,7 +1,12 @@
 ---
-title:  Advanced Installer 19.2 安装包及激活工具分享
+title: Advanced Installer 19.2 安装包及激活工具分享
+abbrlink: AdvanceInstaller-19-2-安装包及激活工具分享
 date: 2022-03-08 10:25:56
-tags: AdvanceInstaller 破解工具
+tags:
+    - AdvanceInstaller
+    - 破解
+categories:
+    - 工具
 ---
 ## 重点
 

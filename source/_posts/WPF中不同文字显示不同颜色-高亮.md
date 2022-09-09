@@ -1,7 +1,11 @@
 ---
 title: WPF中不同文字显示不同颜色(高亮)
+abbrlink: WPF中不同文字显示不同颜色-高亮
 date: 2022-01-13 10:14:49
-tags: [WPF]
+tags:
+    - WPF
+categories:
+    - WPF
 ---
 
 本文代码来自于 [Stackoverflow](https://stackoverflow.com/questions/751741/wpf-textblock-highlight-certain-parts-based-on-search-condition/60474831#60474831) @`Blechdose`，感谢！

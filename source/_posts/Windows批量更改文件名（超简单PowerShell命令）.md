@@ -1,7 +1,11 @@
 ---
 title: Windows批量更改文件名（超简单PowerShell命令）
+abbrlink: Windows批量更改文件名（超简单PowerShell命令）
 date: 2022-07-05 20:17:12
-tags: PowerShell
+tags:
+    - PowerShell
+categories:
+    - 实用技能
 ---
 
 ## 正文

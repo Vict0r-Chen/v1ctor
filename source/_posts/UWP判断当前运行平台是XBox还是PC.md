@@ -1,7 +1,12 @@
 ---
 title: UWP判断当前运行平台是XBox还是PC
+abbrlink: UWP判断当前运行平台是XBox还是PC
 date: 2022-07-22 23:08:54
-tags: [UWP, XBox, ResouceDictionary]
+tags:
+    - UWP
+    - XBox
+categories:
+    - UWP
 ---
 
 ## 前言
