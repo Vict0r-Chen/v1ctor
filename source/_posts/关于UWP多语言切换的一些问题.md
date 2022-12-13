@@ -20,7 +20,7 @@ date: 2022-12-12 17:37:09
 * 切换后需要立刻生效（不重启APP）
 * 切换后无法立刻生效（需要安装对应的语言包或重新安装APP）
 
-## 一、立刻生效多语言
+## 立刻生效多语言
 
 主流的做法是设置完语言后重启APP，当然这样的体验不太好，最简单的办法就是（面向[StackOverflow](https://stackoverflow.com/questions/32715690/c-sharp-change-app-language-programmatically-uwp-realtime)编程？😁）在设置完语言后重定向到当前页面即可：
 
@@ -30,7 +30,7 @@ Windows.ApplicationModel.Resources.Core.ResourceContext.SetGlobalQualifierValue(
 Frame.Navigate(this.GetType());
 ```
 
-## 二、切换多语言后不生效
+## 切换多语言后不生效
 
 ### 对于PC
 
