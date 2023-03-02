@@ -611,7 +611,7 @@ changyan:
 utterances:
   enable: true
   repo: Vict0r-Chen/blog-comment
-  theme: github-light
+  theme: dark-blue
   issue_term: pathname
 
 # Valine
