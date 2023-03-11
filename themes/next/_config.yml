@@ -607,10 +607,17 @@ changyan:
   appkey:
   #post_meta_order: 0
 
+# 整合 utterances 评论
+utterances:
+  enable: true
+  repo: Vict0r-Chen/blog-comment
+  theme: dark-blue
+  issue_term: pathname
+
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: true
+  enable: false
   appid: b8Cl0cL4LSTvWfsE6yHbF6uk-9Nh9j0Va # Your leancloud application appid
   appkey: Y5HlQlullBWD8Txpao74GIqp # Your leancloud application appkey
   notify: true # Mail notifier
