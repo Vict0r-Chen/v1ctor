@@ -40,3 +40,5 @@ date: 2023-03-10 00:18:02
 `--skip-grant-tables`会让服务器跳过读取`mysql`系统模式中的`grant`表，从而在不使用权限系统的情况下启动，这使得任何可以访问服务器的人都可以无限制地访问所有数据库。
 
 因为使用`--skip-grant-tables`启动服务器会禁用身份验证检查，所以在这种情况下，服务器也会通过启用skip_networking来禁用远程连接。
+
+test for cdn flush(01)

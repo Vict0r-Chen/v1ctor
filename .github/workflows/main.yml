@@ -77,3 +77,11 @@ jobs:
           PUBLISH_BRANCH: main
 #          publish_dir: ./public
 #           keep_files: false # remove existing files
+
+      - name: Flush CDN
+        env:
+          SECRET_ID: ${{ secrets.SECRETID }}      # 传入鉴权信息
+          SECRET_KEY: ${{ secrets.SECRETKEY }}
+        run: |                                    # 安装 sdk 并运行刷新脚本
+          pip install --upgrade tencentcloud-sdk-python
+          python flush-dns.py -i $SECRET_ID -k $SECRET_KEY
