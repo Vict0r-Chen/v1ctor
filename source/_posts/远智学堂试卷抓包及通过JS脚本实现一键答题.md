@@ -31,7 +31,7 @@ date: 2023-01-08 16:27:01
 
 1. 在控制台中输入`ipconfig`查询当前电脑IP，将ip地址以及端口`8888`在手机上配置为代理：Settings - WLAN - Wifi详情 - Configure Proxy；
 
-2. 在手机上访问`chls.pro/ssl`，进入页面会立刻提示此网站尝试下载证书，点击允许即可；
+2. 在手机上访问`chls.pro/ssl`，进入页面会立刻提示此网站尝试下载证书，点击允许即可。**如果没有弹出提示下载证书，尝试关闭手机及PC端的代理、如小飞机、Clash、SS等**；
 
 3. 下载成功后打开IOS Setting应用，第一项菜单应该就是`Profile Downloaded`，进去后点击`Install`然后输入锁屏密码；
 
