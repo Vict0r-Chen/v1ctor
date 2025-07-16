@@ -1,9 +1,10 @@
 ---
 title: UWP打包应用提示未给任务RemoveDisposableSigningCertificate的必需参数CertificateThumbprint赋值
 tags:
-    - UWP
+  - UWP
 categories:
-    - UWP
+  - UWP
+abbrlink: 219264919
 date: 2025-04-15 12:00:00
 ---
 
