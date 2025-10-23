@@ -8,7 +8,7 @@ categories:
 date: 2025-10-23 11:34:55
 ---
 
-直接分享PowerShell脚本（AI率100%，自测没问题😂），根据需求修改`$Source`和`$Target`变量，下面的脚本是把数据迁移到`F:\Program Files (x86)\Chrome`目录
+直接分享PowerShell脚本（AI率100%，自测没问题😂），根据需求修改`$Target`变量为你想要迁移的目录，下面的脚本是把数据迁移到`F:\Program Files (x86)\Chrome`目录
 
 <!-- more -->
 
